@@ -1,0 +1,14 @@
+Methodologies
+
+    - Open source
+        - All documents, models, code, test cases, and everything used to develop the system is available publicly on github
+
+    - Model Driven Development
+        - The requirements and high level requirements should be based on UML models
+        - Abstracts the granular details allowing better management of complexity
+
+    - Test Driven Development
+
+    - Plan Driven Development
+
+    - 
