@@ -7,7 +7,7 @@
     <meta name="description" content="Interactivebaseballsimulator : Simulates the play of baseball games using statistics and probability and uses artifical intelligence to make informed dynamic game time decisions" />
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/global.css">
     <title>Interactivebaseballsimulator</title>
   </head>
 
@@ -18,8 +18,9 @@
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/InteractiveDesigns/InteractiveBaseballSimulator">View on GitHub</a>
 
-          <h1 id="project_title">Interactivebaseballsimulator</h1>
-          <h2 id="project_tagline">Simulates the play of baseball games using statistics and probability and uses artifical intelligence to make informed dynamic game time decisions</h2>
+          <h1 id="project_title">Interactive Baseball Simulator</h1>
+          <h2 id="project_tagline">Simulates the play of baseball games using a statistical probability model, data mining, and artifical intelligence to make informed dynamic game time decisions
+</h2>
 
             <section id="downloads">
               <a class="zip_download_link" href="https://github.com/InteractiveDesigns/InteractiveBaseballSimulator/zipball/master">Download this project as a .zip file</a>
@@ -31,33 +32,61 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h3>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
+        <div class="MainBody">
+          <h3>Goals</h3>
+          <div class="BodySection">
+            <ul>
+              <p>The goals of this project are primarily to give the team members a significant amount of experience with system design and implementation that can be used in real world situations, and secondarily to provide a meaningful quality system that can be used in the real world.</p>
+              <li>Develop a product to simulate a single baseball game, an entire regular season, and the playoffs</li>
+              <li>Greatly enhance and expand the knowledge of the development team</li>
+              <li>Provide an interface to allow web applications, mobile apps, and 3rd parties to interact with the simulator</li>
+            </ul>
+          </div>      
+            <h3>Description</h3>
+            <div class="BodySection">
+              <p style="font-weight:bold;">Simulation</p>
+              <p>The completed system will simulate at bats based on a statistical probability model. The following statistics will be used to calculate the results. The exact forumlas have yet to be developed, but I am confident that this will be a minor task.</p>
+              <ul>
+                <li>The number of hits allowed, walks, and strikeouts for a pitcher</li>
+                <li>The propertion of hits, doubles, triples, and home runs to outs for a batter</li>
+              </ul>
+              <p style="font-weight:bold">Dynamic Decisions</p>
+              <p>The final version of the system will also include components for data mining and artificial intelligence to make the simulator more dynamic. In the final version, the system will support the following features:</p>
+              <ul>
+                <li>The ability to decide when a team should go to the bullpen</li>
+                <li>The ability to determine when to use a pinch hitter based on the current situation</li>
+                <li>The ability to calculate effective pitching and batting stats by analyzing recent and historical performances</li>
+              </ul>
+            </div>
+          </div>
+<h3>Limitations and Assumptions</h3>
+<div class="BodySection">
+  <p>This is is a simulator, it can never be precise enough to model human behavoir, but nonethless it can point you in the right direction. The following are major assumptions this project is based on:</p>
+  <ul>
+    <li>The simulator is governed by chance, therefore there are no biased decisions one way or another so the system accurately describes the <span style="font-style:italic">probabile outcome</span></li>
+    <li>Long term statistics of a player are useful, but using short term statistics is more realistic</li>
+    <li>The common trends of hitters and pitchers over time are useful in calculating effective batting and pitching probabilities</li>
+  </ul>
+</div>
+<h3>Schedule</h3>
+          <div class="BodySection">
+            <p>Scheduling is the major constraint for this project. The project will be worked on for short bursts of three months and sit idle for 4 to 6 months before being worked on again. The work will be broken down into 3 major versions:</p>
+            <ol>
+              <li>Develop a basic simulator system, Due: 8/24/2012</li>
+              <li>Develop a web application that can interact with the simulator, Due 1/18/2013</li>
+              <li>Develop a mobile application that can interact with the simulator, Due 6/7/2013</li>
+            </ol>
+          </div>
+          <h3>Development Platforms and Technologies</h3>
+          <div class="BodySection">
+            <p>The system will use some servers that run on a variant of the UNIX operating system and others that run Microsoft. The following shows what combination of platforms, programming languages, and technologies will be used for which components:</p>
+            <ul>
+              <li>A Server running on UNIX will support the main simulator component written in C</li>
+              <li>A server running on Microsoft will host a web application built using ASP.NET Model View Controller and Windows Communication Foundation</li>
+              <li>The mobile application will be built for Android OS Version 2.3.3</li>
+            </ul>
+          </div>
+        </div>
     </div>
 
     <!-- FOOTER  -->
@@ -67,8 +96,5 @@ $ git checkout gh-pages
         <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
-
-    
-
   </body>
 </html>
