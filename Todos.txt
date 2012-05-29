@@ -1,0 +1,15 @@
+Todos
+
+  - Create Security Policy
+
+  - Create Quality Plan
+
+  - Create Test Plan
+
+  - Finish Config Mgmnt plan
+
+  - Create Validation Plan
+
+  - Create User Documentation Plan
+
+  - Create Vision and Scope Document
